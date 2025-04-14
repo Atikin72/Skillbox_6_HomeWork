@@ -26,6 +26,6 @@ print("Подсчёт чисел в кубе закончен до 100")
 # num = int(input("Введите степень: "))
 # count = 1
 
-# while count <= True:
+# while count >= 0:
 #     print(count, "**", num, "=", count ** num)
 #     count += 1

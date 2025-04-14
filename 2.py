@@ -19,3 +19,8 @@ coint = 0
 
 if num == 0:
     coint = 1
+else:
+    while num > 0:
+        num //= 10
+        coint += 1
+print("Количество цифр введенного числа равно ", coint)
