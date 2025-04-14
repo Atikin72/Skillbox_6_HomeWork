@@ -19,4 +19,13 @@ while count < 100:
     answer = count ** num
     print(count," ** ", num," = ", answer)
     count += 1
-print("Подсчёт закончен до 100")  
+print("Подсчёт чисел в кубе закончен до 100")  
+
+# Второй вариант
+
+# num = int(input("Введите степень: "))
+# count = 1
+
+# while count <= True:
+#     print(count, "**", num, "=", count ** num)
+#     count += 1
