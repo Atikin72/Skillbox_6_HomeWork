@@ -74,4 +74,13 @@ allWork = 0
 
 while time <= 0:
     questWork = int(input("Сколько задач решит Максим? "))
-    allWork += questWork 
+    allWork += questWork
+    while callWife == False:
+        call = int(input("Звонит жена. Взять трубку? (1 — да, 0 — нет): "))
+        if call == 1:
+            callWife == True
+        elif call == 0:
+            callWife == False
+        else:
+            print("Неверный вариант")
+            callWife == False    
