@@ -72,19 +72,22 @@ callWife = False
 questWork = 0 
 allWork = 0
 
-while time <= 8:
+while time < 8:
     questWork = int(input("Сколько задач решит Максим? "))
     allWork += questWork
     time += 1 
-    while callWife == False:
+    if callWife == False:
         call = int(input("Звонит жена. Взять трубку? (1 — да, 0 — нет): "))
         if call == 1:
             callWife = True
+            continue
         elif call == 0:
             callWife = False
+            continue
         else:
             print("Неверный вариант")
-            callWife == False
+            callWife == False 
+
 print("Рабочий день закончился. Всего выполнено задач: ", allWork )
 if callWife == True:
     print("Нужно зайти в магазин." )
