@@ -20,3 +20,16 @@ print('Задача 4. Вклады')
 # 4 год. 56 + 5% = 58
 # 5 год. 58 + 5% = 60
 # Кол-во лет для достижения порога: 5
+
+moneyBalance = 50
+moneyUp = 5
+endBalnce = 60
+slaveryYear = 0
+
+while moneyBalance < endBalnce:
+    moneyYear = moneyBalance + ((moneyUp / 100) * moneyBalance)
+    slaveryYear += 1
+    print(slaveryYear, "год.", moneyBalance, " + ", moneyUp, " = ", moneyYear)
+    moneyBalance = moneyYear
+
+print("Кол-во лет для достижения порога: ", slaveryYear)
