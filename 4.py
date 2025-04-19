@@ -24,12 +24,12 @@ print('Задача 4. Вклады')
 moneyBalance = 50
 moneyUp = 5
 endBalnce = 60
-slaveryYear = 0
+slaverYear = 0
 
 while moneyBalance < endBalnce:
-    moneyYear = moneyBalance + ((moneyUp / 100) * moneyBalance)
-    slaveryYear += 1
-    print(slaveryYear, "год.", moneyBalance, " + ", moneyUp, " = ", moneyYear)
+    moneyYear = int (moneyBalance + ((moneyUp / 100) * moneyBalance))
+    slaverYear += 1
+    print(slaverYear, "год.", moneyBalance, " + ", moneyUp, "% = ", moneyYear)
     moneyBalance = moneyYear
 
-print("Кол-во лет для достижения порога: ", slaveryYear)
+print("Кол-во лет для достижения порога: ", slaverYear)
