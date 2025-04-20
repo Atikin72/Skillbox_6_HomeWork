@@ -25,3 +25,12 @@ print("Игра 'Угадай число' началась!")
 
 while True:
     guess = int(input("Введите число: "))
+
+    guess_count += 1
+    if guess < secret_number:
+        print("Число меньше, чем нужно. Попробуйте ещё раз!")
+    elif guess > secret_number:
+        print("Число больше, чем нужно. Попробуйте ещё раз!")
+    else:
+        print(f"Вы угадали! Число попыток: {guess_count}")
+        break
