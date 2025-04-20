@@ -21,9 +21,14 @@ print('Задача 4. Вклады')
 # 5 год. 58 + 5% = 60
 # Кол-во лет для достижения порога: 5
 
-moneyBalance = 50
-moneyUp = 5
-endBalnce = 60
+# moneyBalance = 50
+# moneyUp = 5
+# endBalnce = 60
+# slaverYear = 0
+
+moneyBalance = int(input("Введите, пожалуйста, ваш баланс: "))
+moneyUp = int(input("Введите, пожалуйста, ваш процентную ставку: "))
+endBalnce = int(input("Введите, пожалуйста, чило баланса, котрое вы хотите накопить: "))
 slaverYear = 0
 
 while moneyBalance < endBalnce:
