@@ -32,5 +32,5 @@ while True:
     elif guess > secret_number:
         print("Число больше, чем нужно. Попробуйте ещё раз!")
     else:
-        print(f"Вы угадали! Число попыток: {guess_count}")
+        print("Вы угадали! Число попыток: ", guess_count)
         break
