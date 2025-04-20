@@ -31,8 +31,8 @@ money_up = int(input("Введите, пожалуйста, ваш процен�
 end_balnce = int(input("Введите, пожалуйста, чило баланса, котрое вы хотите накопить: "))
 slaver_year = 0
 
-while money_balance < endBalnce:
-    money_year = int (money_balance + ((moneyUp / 100) * money_balance))
+while money_balance < end_balnce:
+    money_year = int (money_balance + ((money_up / 100) * money_balance))
     slaver_year += 1
     print(slaver_year, "год.", money_balance, " + ", money_up, "% = ", money_year)
     money_balance = money_year
