@@ -26,15 +26,15 @@ print('Задача 4. Вклады')
 # endBalnce = 60
 # slaverYear = 0
 
-moneyBalance = int(input("Введите, пожалуйста, ваш баланс: "))
-moneyUp = int(input("Введите, пожалуйста, ваш процентную ставку: "))
-endBalnce = int(input("Введите, пожалуйста, чило баланса, котрое вы хотите накопить: "))
-slaverYear = 0
+money_balance = int(input("Введите, пожалуйста, ваш баланс: "))
+money_up = int(input("Введите, пожалуйста, ваш процентную ставку: "))
+end_balnce = int(input("Введите, пожалуйста, чило баланса, котрое вы хотите накопить: "))
+slaver_year = 0
 
-while moneyBalance < endBalnce:
-    moneyYear = int (moneyBalance + ((moneyUp / 100) * moneyBalance))
-    slaverYear += 1
-    print(slaverYear, "год.", moneyBalance, " + ", moneyUp, "% = ", moneyYear)
-    moneyBalance = moneyYear
+while money_balance < endBalnce:
+    money_year = int (money_balance + ((moneyUp / 100) * money_balance))
+    slaver_year += 1
+    print(slaver_year, "год.", money_balance, " + ", money_up, "% = ", money_year)
+    money_balance = money_year
 
-print("Кол-во лет для достижения порога: ", slaverYear)
+print("Кол-во лет для достижения порога: ", slaver_year)

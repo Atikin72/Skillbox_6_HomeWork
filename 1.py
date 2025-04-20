@@ -13,13 +13,13 @@ print('Задача 1. Кубы чисел')
 # 3 ** 3 = 27
 
 num = int(input("Введите число:"))
-count = 0
+count = 1
 answer = 0
-while count < 100:
+while count > 0:
     answer = count ** num
     print(count," ** ", num," = ", answer)
     count += 1
-print("Подсчёт чисел в кубе закончен до 100")  
+# print("Подсчёт чисел в кубе закончен до 100")  
 
 # Второй вариант
 

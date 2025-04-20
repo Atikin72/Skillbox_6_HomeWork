@@ -68,25 +68,25 @@ print('Задача 3. Обычный день на работе')
 # Нужно зайти в магазин.
 
 time = 0
-callWife = False
-questWork = 0 
-allWork = 0
+call_wife = False
+quest_work = 0 
+all_work = 0
 
 while time < 8:
     time += 1 
     print(time,"-й час")
-    questWork = int(input("Сколько задач решит Максим? "))
-    allWork += questWork
-    if callWife == False:
+    quest_work = int(input("Сколько задач решит Максим? "))
+    all_work += quest_work
+    if call_wife == False:
         call = int(input("Звонит жена. Взять трубку? (1 — да, 0 — нет): "))
         if call == 1:
-            callWife = True
+            call_wife = True
             continue
         elif call == 0:
-            callWife = False      
+            call_wife = False      
 
-print("Рабочий день закончился. Всего выполнено задач: ", allWork )
-if callWife == True:
+print("Рабочий день закончился. Всего выполнено задач: ", all_work )
+if call_wife == True:
     print("Нужно зайти в магазин." )
 else:
     print("В магазин не нужно. Но дома вас будет ждать сюрприз!)" )    
