@@ -15,9 +15,9 @@ print('Задача 1. Кубы чисел')
 num = int(input("Введите число:"))
 count = 1
 answer = 0
-while count > 0:
-    answer = count ** num
-    print(count," ** ", num," = ", answer)
+while count <= num:
+    answer = count ** 3
+    print(count," ** ", 3," = ", answer)
     count += 1
 # print("Подсчёт чисел в кубе закончен до 100")  
 
